@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: multi-tenancy
+    datasource:
+        admin:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            password: Josephomololu98$
+            url: jdbc:mysql://localhost:3306/tenanant
+            username: root
+    jpa:
+        show-sql: true
+        properties:
+            hibernate:
+                ddl-ato: update
+                format-sql: true
+        database: mySQL
+        database-platform: org.hibernate.dialect.MySQL8Dialect
